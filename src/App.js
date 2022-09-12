@@ -67,7 +67,7 @@ const [text, setText] = useState(`
         }}
         value={text}
         ></textarea>
-        </div>
+   ~     </div>
         <div className='previewWrap'>
           <div id='preview' dangerouslySetInnerHTML={{
             __html: marked(text)}}>
