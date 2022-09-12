@@ -1,0 +1,95 @@
+
+:root {
+  --main-green: rgb(81, 255, 0);
+  --main-gold: rgb(218, 165, 32);
+  --bg-gray: rgb(39, 39, 39);
+}
+
+.App {
+  text-align: center;
+  background: black;
+  height: calc(100% + 800px);
+  font-family: 'Arvo', sans-serif;
+  
+
+  .preview, i, .spacer {
+    display: inline-block;
+  }
+
+  .title-div {
+      font-size: 20px;
+      width: fit-content;
+      margin: auto;
+      text-align: center;
+      color: var(--main-green);
+      padding: 3em;
+      .title {
+        margin-top: 2px;
+        vertical-align: top;
+        margin-left: 5px;
+        border: none;
+      }
+      
+    }
+
+  .editor-wrap{
+      width: 60%;
+      margin-right: 20%;
+      margin-left: 20%;
+      box-shadow: 1px 1px 10px 2px lighten(rgb(81, 255, 0), 20%);
+    
+
+  .toolbar{
+    width: 99%;
+    background: var(--main-gold);
+    padding: 5px 4px 4px 3px;
+    border: 1px solid #1d2f2f;
+    border-bottom: none;
+    color: var(--main-green);
+    
+    
+    div{
+      display: inline;
+    }
+    .spacer{
+      padding: 1em;
+    }
+    .toolbarIcon{
+      padding: 0.3em;
+    }
+  }
+  #editor{
+    background: var(--bg-gray);
+    height: 80px;
+    width: 99%;
+    color: var(--main-green);
+    }
+  textarea {
+      height: 800px;
+      margin-bottom: -5px;
+      resize: vertical;
+      outline: none;
+      border-top:none;
+      background: var(--bg-gray);
+      padding-left: 5px;
+    }
+}
+ .previewWrap {
+      width: 90%;
+      margin: 20px;
+      padding-right: 20px;
+      box-shadow: 7px 5px 20px 2px lighten(rgb(81, 255, 0), 20%);
+      overflow-wrap: break-word;
+      height: fit-content;
+      #preview {
+        padding: 1rem 1rem;
+        vertical-align: top;
+        color: var(--main-green);
+        margin-left: 5px;
+        text-align: left;
+      img {
+          height: 200px;
+        }
+      }
+    }
+}
